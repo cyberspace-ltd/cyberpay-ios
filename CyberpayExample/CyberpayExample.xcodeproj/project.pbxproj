@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250C03E0120E2791A97A2994 /* Pods_CyberpayExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42436C33CCC9CF6DF2F1A566 /* Pods_CyberpayExampleTests.framework */; };
+		260A11E09B8F08024F148082 /* Pods_CyberpayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E49229B74056B3727E4470 /* Pods_CyberpayExample.framework */; };
+		5A041547AC97BA7961DC259D /* Pods_CyberpayExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA68CF8870275D4409B943F /* Pods_CyberpayExampleUITests.framework */; };
+		A60DA044220DCF4E002D1A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA043220DCF4E002D1A48 /* AppDelegate.swift */; };
+		A60DA046220DCF4E002D1A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA045220DCF4E002D1A48 /* ViewController.swift */; };
+		A60DA049220DCF4E002D1A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60DA047220DCF4E002D1A48 /* Main.storyboard */; };
+		A60DA04B220DCF4F002D1A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60DA04A220DCF4F002D1A48 /* Assets.xcassets */; };
+		A60DA04E220DCF4F002D1A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60DA04C220DCF4F002D1A48 /* LaunchScreen.storyboard */; };
+		A60DA059220DCF4F002D1A48 /* CyberpayExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA058220DCF4F002D1A48 /* CyberpayExampleTests.swift */; };
+		A60DA064220DCF4F002D1A48 /* CyberpayExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA063220DCF4F002D1A48 /* CyberpayExampleUITests.swift */; };
+		A60DA0A22210C27D002D1A48 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA0A12210C27D002D1A48 /* OtpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60DA055220DCF4F002D1A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60DA038220DCF4E002D1A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60DA03F220DCF4E002D1A48;
+			remoteInfo = CyberpayExample;
+		};
+		A60DA060220DCF4F002D1A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60DA038220DCF4E002D1A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60DA03F220DCF4E002D1A48;
+			remoteInfo = CyberpayExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A60DA078220DD28F002D1A48 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		20E49229B74056B3727E4470 /* Pods_CyberpayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3385EAFCDC1969F04FAA9A74 /* Pods-CyberpayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExample.debug.xcconfig"; path = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample.debug.xcconfig"; sourceTree = "<group>"; };
+		35D00F67DCF098895783F789 /* Pods-CyberpayExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA68CF8870275D4409B943F /* Pods_CyberpayExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42436C33CCC9CF6DF2F1A566 /* Pods_CyberpayExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9063EEF625570C910503D63F /* Pods-CyberpayExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D78A5F05DFE21CFB84A6057 /* Pods-CyberpayExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A60DA040220DCF4E002D1A48 /* CyberpayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyberpayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60DA043220DCF4E002D1A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A60DA045220DCF4E002D1A48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A60DA048220DCF4E002D1A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A60DA04A220DCF4F002D1A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60DA04D220DCF4F002D1A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60DA04F220DCF4F002D1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60DA054220DCF4F002D1A48 /* CyberpayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyberpayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60DA058220DCF4F002D1A48 /* CyberpayExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberpayExampleTests.swift; sourceTree = "<group>"; };
+		A60DA05A220DCF4F002D1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60DA05F220DCF4F002D1A48 /* CyberpayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyberpayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60DA063220DCF4F002D1A48 /* CyberpayExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyberpayExampleUITests.swift; sourceTree = "<group>"; };
+		A60DA065220DCF4F002D1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60DA0A12210C27D002D1A48 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		B05FD548D27DC10C4AF6E1CF /* Pods-CyberpayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExample.release.xcconfig"; path = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample.release.xcconfig"; sourceTree = "<group>"; };
+		E44D3F4CEDBB9B14B59AE0E5 /* Pods-CyberpayExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyberpayExampleTests.release.xcconfig"; path = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60DA03D220DCF4E002D1A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260A11E09B8F08024F148082 /* Pods_CyberpayExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA051220DCF4F002D1A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250C03E0120E2791A97A2994 /* Pods_CyberpayExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA05C220DCF4F002D1A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A041547AC97BA7961DC259D /* Pods_CyberpayExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E8E308C18829725861C1562 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E49229B74056B3727E4470 /* Pods_CyberpayExample.framework */,
+				42436C33CCC9CF6DF2F1A566 /* Pods_CyberpayExampleTests.framework */,
+				3DA68CF8870275D4409B943F /* Pods_CyberpayExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A60DA037220DCF4E002D1A48 = {
+			isa = PBXGroup;
+			children = (
+				A60DA042220DCF4E002D1A48 /* CyberpayExample */,
+				A60DA057220DCF4F002D1A48 /* CyberpayExampleTests */,
+				A60DA062220DCF4F002D1A48 /* CyberpayExampleUITests */,
+				A60DA041220DCF4E002D1A48 /* Products */,
+				FA2184B01A9DF3FB7FAFFB68 /* Pods */,
+				3E8E308C18829725861C1562 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A60DA041220DCF4E002D1A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA040220DCF4E002D1A48 /* CyberpayExample.app */,
+				A60DA054220DCF4F002D1A48 /* CyberpayExampleTests.xctest */,
+				A60DA05F220DCF4F002D1A48 /* CyberpayExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60DA042220DCF4E002D1A48 /* CyberpayExample */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA043220DCF4E002D1A48 /* AppDelegate.swift */,
+				A60DA045220DCF4E002D1A48 /* ViewController.swift */,
+				A60DA0A12210C27D002D1A48 /* OtpViewController.swift */,
+				A60DA047220DCF4E002D1A48 /* Main.storyboard */,
+				A60DA04A220DCF4F002D1A48 /* Assets.xcassets */,
+				A60DA04C220DCF4F002D1A48 /* LaunchScreen.storyboard */,
+				A60DA04F220DCF4F002D1A48 /* Info.plist */,
+			);
+			path = CyberpayExample;
+			sourceTree = "<group>";
+		};
+		A60DA057220DCF4F002D1A48 /* CyberpayExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA058220DCF4F002D1A48 /* CyberpayExampleTests.swift */,
+				A60DA05A220DCF4F002D1A48 /* Info.plist */,
+			);
+			path = CyberpayExampleTests;
+			sourceTree = "<group>";
+		};
+		A60DA062220DCF4F002D1A48 /* CyberpayExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA063220DCF4F002D1A48 /* CyberpayExampleUITests.swift */,
+				A60DA065220DCF4F002D1A48 /* Info.plist */,
+			);
+			path = CyberpayExampleUITests;
+			sourceTree = "<group>";
+		};
+		FA2184B01A9DF3FB7FAFFB68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3385EAFCDC1969F04FAA9A74 /* Pods-CyberpayExample.debug.xcconfig */,
+				B05FD548D27DC10C4AF6E1CF /* Pods-CyberpayExample.release.xcconfig */,
+				9D78A5F05DFE21CFB84A6057 /* Pods-CyberpayExampleTests.debug.xcconfig */,
+				E44D3F4CEDBB9B14B59AE0E5 /* Pods-CyberpayExampleTests.release.xcconfig */,
+				35D00F67DCF098895783F789 /* Pods-CyberpayExampleUITests.debug.xcconfig */,
+				9063EEF625570C910503D63F /* Pods-CyberpayExampleUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A60DA088221089AE002D1A48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A60DA03F220DCF4E002D1A48 /* CyberpayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60DA068220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExample" */;
+			buildPhases = (
+				C79B1D1D35D9ED2DEDC44406 /* [CP] Check Pods Manifest.lock */,
+				A60DA088221089AE002D1A48 /* Headers */,
+				A60DA03C220DCF4E002D1A48 /* Sources */,
+				A60DA03D220DCF4E002D1A48 /* Frameworks */,
+				A60DA03E220DCF4E002D1A48 /* Resources */,
+				A60DA078220DD28F002D1A48 /* Embed Frameworks */,
+				1F1532D0120DC50A7E2CE395 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CyberpayExample;
+			productName = CyberpayExample;
+			productReference = A60DA040220DCF4E002D1A48 /* CyberpayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60DA053220DCF4F002D1A48 /* CyberpayExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60DA06B220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExampleTests" */;
+			buildPhases = (
+				D09C5CAF41E7C83D8CD83147 /* [CP] Check Pods Manifest.lock */,
+				A60DA050220DCF4F002D1A48 /* Sources */,
+				A60DA051220DCF4F002D1A48 /* Frameworks */,
+				A60DA052220DCF4F002D1A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60DA056220DCF4F002D1A48 /* PBXTargetDependency */,
+			);
+			name = CyberpayExampleTests;
+			productName = CyberpayExampleTests;
+			productReference = A60DA054220DCF4F002D1A48 /* CyberpayExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A60DA05E220DCF4F002D1A48 /* CyberpayExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60DA06E220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExampleUITests" */;
+			buildPhases = (
+				DAAA09E96BEBEE8A79D97B56 /* [CP] Check Pods Manifest.lock */,
+				A60DA05B220DCF4F002D1A48 /* Sources */,
+				A60DA05C220DCF4F002D1A48 /* Frameworks */,
+				A60DA05D220DCF4F002D1A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60DA061220DCF4F002D1A48 /* PBXTargetDependency */,
+			);
+			name = CyberpayExampleUITests;
+			productName = CyberpayExampleUITests;
+			productReference = A60DA05F220DCF4F002D1A48 /* CyberpayExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60DA038220DCF4E002D1A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "David Ehigiator";
+				TargetAttributes = {
+					A60DA03F220DCF4E002D1A48 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A60DA053220DCF4F002D1A48 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A60DA03F220DCF4E002D1A48;
+					};
+					A60DA05E220DCF4F002D1A48 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A60DA03F220DCF4E002D1A48;
+					};
+				};
+			};
+			buildConfigurationList = A60DA03B220DCF4E002D1A48 /* Build configuration list for PBXProject "CyberpayExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60DA037220DCF4E002D1A48;
+			productRefGroup = A60DA041220DCF4E002D1A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60DA03F220DCF4E002D1A48 /* CyberpayExample */,
+				A60DA053220DCF4F002D1A48 /* CyberpayExampleTests */,
+				A60DA05E220DCF4F002D1A48 /* CyberpayExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60DA03E220DCF4E002D1A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA04E220DCF4F002D1A48 /* LaunchScreen.storyboard in Resources */,
+				A60DA04B220DCF4F002D1A48 /* Assets.xcassets in Resources */,
+				A60DA049220DCF4E002D1A48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA052220DCF4F002D1A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA05D220DCF4F002D1A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1532D0120DC50A7E2CE395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/cyberpaysdk/cyberpaysdk.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cyberpaysdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79B1D1D35D9ED2DEDC44406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CyberpayExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09C5CAF41E7C83D8CD83147 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CyberpayExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAAA09E96BEBEE8A79D97B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CyberpayExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60DA03C220DCF4E002D1A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA046220DCF4E002D1A48 /* ViewController.swift in Sources */,
+				A60DA044220DCF4E002D1A48 /* AppDelegate.swift in Sources */,
+				A60DA0A22210C27D002D1A48 /* OtpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA050220DCF4F002D1A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA059220DCF4F002D1A48 /* CyberpayExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60DA05B220DCF4F002D1A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA064220DCF4F002D1A48 /* CyberpayExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60DA056220DCF4F002D1A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60DA03F220DCF4E002D1A48 /* CyberpayExample */;
+			targetProxy = A60DA055220DCF4F002D1A48 /* PBXContainerItemProxy */;
+		};
+		A60DA061220DCF4F002D1A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60DA03F220DCF4E002D1A48 /* CyberpayExample */;
+			targetProxy = A60DA060220DCF4F002D1A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60DA047220DCF4E002D1A48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60DA048220DCF4E002D1A48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A60DA04C220DCF4F002D1A48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60DA04D220DCF4F002D1A48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60DA066220DCF4F002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A60DA067220DCF4F002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A60DA069220DCF4F002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3385EAFCDC1969F04FAA9A74 /* Pods-CyberpayExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CyberpayExample/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CyberpayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60DA06A220DCF4F002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05FD548D27DC10C4AF6E1CF /* Pods-CyberpayExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CyberpayExample/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CyberpayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A60DA06C220DCF4F002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D78A5F05DFE21CFB84A6057 /* Pods-CyberpayExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = CyberpayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CyberpayExample.app/CyberpayExample";
+			};
+			name = Debug;
+		};
+		A60DA06D220DCF4F002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44D3F4CEDBB9B14B59AE0E5 /* Pods-CyberpayExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = CyberpayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CyberpayExample.app/CyberpayExample";
+			};
+			name = Release;
+		};
+		A60DA06F220DCF4F002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D00F67DCF098895783F789 /* Pods-CyberpayExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = CyberpayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CyberpayExample;
+			};
+			name = Debug;
+		};
+		A60DA070220DCF4F002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9063EEF625570C910503D63F /* Pods-CyberpayExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = CyberpayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.CyberpayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CyberpayExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60DA03B220DCF4E002D1A48 /* Build configuration list for PBXProject "CyberpayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60DA066220DCF4F002D1A48 /* Debug */,
+				A60DA067220DCF4F002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60DA068220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60DA069220DCF4F002D1A48 /* Debug */,
+				A60DA06A220DCF4F002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60DA06B220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60DA06C220DCF4F002D1A48 /* Debug */,
+				A60DA06D220DCF4F002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60DA06E220DCF4F002D1A48 /* Build configuration list for PBXNativeTarget "CyberpayExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60DA06F220DCF4F002D1A48 /* Debug */,
+				A60DA070220DCF4F002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60DA038220DCF4E002D1A48 /* Project object */;
+}

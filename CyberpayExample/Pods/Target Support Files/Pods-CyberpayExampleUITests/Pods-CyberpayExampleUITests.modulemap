@@ -1,0 +1,6 @@
+framework module Pods_CyberpayExampleUITests {
+  umbrella header "Pods-CyberpayExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

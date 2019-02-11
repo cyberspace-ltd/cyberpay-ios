@@ -1,0 +1,22 @@
+PODS:
+  - cyberpaysdk (1.0.0)
+
+DEPENDENCIES:
+  - cyberpaysdk (from `https://github.com/cyberspace-ltd/cyberpay-ios.git`, tag `1.0.0`)
+
+EXTERNAL SOURCES:
+  cyberpaysdk:
+    :git: https://github.com/cyberspace-ltd/cyberpay-ios.git
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  cyberpaysdk:
+    :git: https://github.com/cyberspace-ltd/cyberpay-ios.git
+    :tag: 1.0.0
+
+SPEC CHECKSUMS:
+  cyberpaysdk: dbdfee4ebe3789d29fc7ee5de0f5bb5347a74567
+
+PODFILE CHECKSUM: 19c9fd7e4f2d644d0a870b4e47744d8927042c32
+
+COCOAPODS: 1.6.0

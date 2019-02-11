@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="upc-3h-9su">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cyberpay SDK Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CyberpayExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qGQ-hu-iDZ" customClass="CPCardNumberTextField" customModule="cyberpaysdk">
+                                <rect key="frame" x="16" y="106" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="h0s-RN-cQF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-mB-GX5">
+                                <rect key="frame" x="16" y="80" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-jE-Y1q">
+                                <rect key="frame" x="16" y="166" width="343" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vmS-iu-fjD" userLabel="Date StackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exp. Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYo-Mz-uhX">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5s-ko-jEd" customClass="CPDateTextField" customModule="cyberpaysdk">
+                                                <rect key="frame" x="0.0" y="26" width="163.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Dkf-Oh-81n"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6ON-Zd-kL3" userLabel="CVV StackView">
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-xD-FlC">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQU-DG-Q2g" customClass="CPCVVTextField" customModule="cyberpaysdk">
+                                                <rect key="frame" x="0.0" y="26" width="163.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="GTY-KS-LzK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0az-1L-1E3">
+                                <rect key="frame" x="16" y="343.5" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Tgb-cX-FJz"/>
+                                </constraints>
+                                <state key="normal" title="Make Payment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IPC-2l-IQr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15q-gJ-6jj">
+                                <rect key="frame" x="16" y="252" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awU-MH-0QV" customClass="MaterialFilledTextField" customModule="cyberpaysdk">
+                                <rect key="frame" x="16" y="278" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I7j-AK-TWy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CU7-Vy-6ba">
+                                <rect key="frame" x="177.5" y="403.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0az-1L-1E3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4Aq-Ef-hIC"/>
+                            <constraint firstItem="Lhw-jE-Y1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6LC-gL-cPu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="15q-gJ-6jj" secondAttribute="trailing" constant="16" id="6ye-GI-Wzd"/>
+                            <constraint firstItem="Lhw-jE-Y1q" firstAttribute="top" secondItem="qGQ-hu-iDZ" secondAttribute="bottom" constant="16" id="AEA-Ub-QKg"/>
+                            <constraint firstItem="qGQ-hu-iDZ" firstAttribute="top" secondItem="MKB-mB-GX5" secondAttribute="bottom" constant="8" id="CXd-gT-egZ"/>
+                            <constraint firstItem="awU-MH-0QV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Erx-Wz-R19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKB-mB-GX5" secondAttribute="trailing" constant="16" id="HNE-tN-2Ab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0az-1L-1E3" secondAttribute="trailing" constant="16" id="Kf1-EW-DNz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qGQ-hu-iDZ" secondAttribute="trailing" constant="16" id="YbP-TO-nfH"/>
+                            <constraint firstItem="MKB-mB-GX5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="b9y-t1-9cL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="awU-MH-0QV" secondAttribute="trailing" constant="16" id="daW-w5-nS6"/>
+                            <constraint firstItem="MKB-mB-GX5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hyC-Jv-cTD"/>
+                            <constraint firstItem="CU7-Vy-6ba" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iB1-d6-dAh"/>
+                            <constraint firstItem="CU7-Vy-6ba" firstAttribute="top" secondItem="0az-1L-1E3" secondAttribute="bottom" constant="16" id="jkH-ZB-anT"/>
+                            <constraint firstAttribute="trailing" secondItem="Lhw-jE-Y1q" secondAttribute="trailing" constant="16" id="o6d-36-xDa"/>
+                            <constraint firstItem="15q-gJ-6jj" firstAttribute="top" secondItem="Lhw-jE-Y1q" secondAttribute="bottom" constant="16" id="swX-KJ-iH3"/>
+                            <constraint firstItem="15q-gJ-6jj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v6g-Zm-4tK"/>
+                            <constraint firstItem="0az-1L-1E3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vd5-ZX-7AT"/>
+                            <constraint firstItem="awU-MH-0QV" firstAttribute="top" secondItem="15q-gJ-6jj" secondAttribute="bottom" constant="8" id="yxM-mu-j6K"/>
+                            <constraint firstItem="qGQ-hu-iDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zaB-T3-YiK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cyberpay SDK Demo" id="9uQ-nu-FEL"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="CU7-Vy-6ba" id="Y9z-aP-YVx"/>
+                        <outlet property="amountTextField" destination="awU-MH-0QV" id="Upz-LI-6NN"/>
+                        <outlet property="cardNumberTextField" destination="qGQ-hu-iDZ" id="zi5-1j-dGg"/>
+                        <outlet property="cvvTextField" destination="sQU-DG-Q2g" id="tDJ-v7-THn"/>
+                        <outlet property="expiryDateTextField" destination="X5s-ko-jEd" id="ezE-h0-exa"/>
+                        <outlet property="paymentButton" destination="0az-1L-1E3" id="y7A-Cw-5lc"/>
+                        <segue destination="65H-bN-nDJ" kind="show" identifier="go-to-otp" id="3lU-BQ-yRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.8" y="27.436281859070466"/>
+        </scene>
+        <!--Otp View Controller-->
+        <scene sceneID="2Bf-E4-vng">
+            <objects>
+                <viewController id="65H-bN-nDJ" customClass="OtpViewController" customModule="CyberpayExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2xo-Qt-mX3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP Code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6n-PI-K69">
+                                <rect key="frame" x="16" y="80" width="343" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A text message with code was sent to your phone number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqj-1o-h8f">
+                                <rect key="frame" x="16" y="109.5" width="343" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZJ-b0-yla" customClass="MaterialFilledTextField" customModule="cyberpaysdk">
+                                <rect key="frame" x="16" y="164" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TyX-vC-tmD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-0e-5Mw">
+                                <rect key="frame" x="16" y="248" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="asS-l9-hQj"/>
+                                </constraints>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCQ-gA-FUM"/>
+                                    <action selector="onVerifyTapped:" destination="65H-bN-nDJ" eventType="touchUpInside" id="fty-WI-afC"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="BkT-MO-LNO">
+                                <rect key="frame" x="177.5" y="308" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6YP-0e-5Mw" firstAttribute="top" secondItem="QZJ-b0-yla" secondAttribute="bottom" constant="40" id="3wL-TU-hpg"/>
+                            <constraint firstItem="BkT-MO-LNO" firstAttribute="top" secondItem="6YP-0e-5Mw" secondAttribute="bottom" constant="16" id="Bia-mf-VLe"/>
+                            <constraint firstItem="wqj-1o-h8f" firstAttribute="leading" secondItem="gaj-wV-L9t" secondAttribute="leading" constant="16" id="ELK-zg-sdB"/>
+                            <constraint firstItem="gaj-wV-L9t" firstAttribute="trailing" secondItem="wqj-1o-h8f" secondAttribute="trailing" constant="16" id="Hqn-Gc-eIo"/>
+                            <constraint firstItem="QZJ-b0-yla" firstAttribute="top" secondItem="wqj-1o-h8f" secondAttribute="bottom" constant="16" id="KRa-LC-PWP"/>
+                            <constraint firstItem="gaj-wV-L9t" firstAttribute="trailing" secondItem="QZJ-b0-yla" secondAttribute="trailing" constant="16" id="VbF-K7-77S"/>
+                            <constraint firstItem="wqj-1o-h8f" firstAttribute="top" secondItem="f6n-PI-K69" secondAttribute="bottom" constant="8" id="aZO-Yc-AAz"/>
+                            <constraint firstItem="6YP-0e-5Mw" firstAttribute="leading" secondItem="gaj-wV-L9t" secondAttribute="leading" constant="16" id="b0m-qC-Uzn"/>
+                            <constraint firstItem="f6n-PI-K69" firstAttribute="leading" secondItem="gaj-wV-L9t" secondAttribute="leading" constant="16" id="chp-u1-ugh"/>
+                            <constraint firstItem="gaj-wV-L9t" firstAttribute="trailing" secondItem="6YP-0e-5Mw" secondAttribute="trailing" constant="16" id="geW-vw-ew6"/>
+                            <constraint firstItem="gaj-wV-L9t" firstAttribute="trailing" secondItem="f6n-PI-K69" secondAttribute="trailing" constant="16" id="jir-vv-2FI"/>
+                            <constraint firstItem="f6n-PI-K69" firstAttribute="top" secondItem="gaj-wV-L9t" secondAttribute="top" constant="16" id="kz5-h6-ml0"/>
+                            <constraint firstItem="BkT-MO-LNO" firstAttribute="centerX" secondItem="gaj-wV-L9t" secondAttribute="centerX" id="mH8-B5-gz6"/>
+                            <constraint firstItem="QZJ-b0-yla" firstAttribute="leading" secondItem="gaj-wV-L9t" secondAttribute="leading" constant="16" id="xbo-O0-Lb8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gaj-wV-L9t"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="BkT-MO-LNO" id="gOm-uw-zVD"/>
+                        <outlet property="otpTextField" destination="QZJ-b0-yla" id="GJY-30-8bj"/>
+                        <outlet property="verifyButton" destination="6YP-0e-5Mw" id="oOn-vZ-H6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udM-Jj-uxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PCe-wp-Mdr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="upc-3h-9su" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XYx-tu-bEo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Al-aT-I9m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k95-0R-sZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
