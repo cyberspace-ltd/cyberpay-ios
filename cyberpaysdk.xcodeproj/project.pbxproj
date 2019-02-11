@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60D9FDB220DC02B002D1A48 /* cyberpaysdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60D9FD1220DC02B002D1A48 /* cyberpaysdk.framework */; };
+		A60D9FE0220DC02B002D1A48 /* cyberpaysdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FDF220DC02B002D1A48 /* cyberpaysdkTests.swift */; };
+		A60D9FE2220DC02B002D1A48 /* cyberpaysdk.h in Headers */ = {isa = PBXBuildFile; fileRef = A60D9FD4220DC02B002D1A48 /* cyberpaysdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A60DA016220DC063002D1A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60D9FEB220DC063002D1A48 /* Assets.xcassets */; };
+		A60DA017220DC063002D1A48 /* CPCardParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FED220DC063002D1A48 /* CPCardParams.swift */; };
+		A60DA018220DC063002D1A48 /* CPOtpParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FEE220DC063002D1A48 /* CPOtpParams.swift */; };
+		A60DA019220DC063002D1A48 /* CPTransactionParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FEF220DC063002D1A48 /* CPTransactionParams.swift */; };
+		A60DA01A220DC063002D1A48 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF1220DC063002D1A48 /* UIColor+Extensions.swift */; };
+		A60DA01B220DC063002D1A48 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF3220DC063002D1A48 /* Exceptions.swift */; };
+		A60DA01C220DC063002D1A48 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF5220DC063002D1A48 /* APIError.swift */; };
+		A60DA01D220DC063002D1A48 /* OtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF7220DC063002D1A48 /* OtpResponse.swift */; };
+		A60DA01E220DC063002D1A48 /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF8220DC063002D1A48 /* TransactionResponse.swift */; };
+		A60DA01F220DC063002D1A48 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FF9220DC063002D1A48 /* ApiResponse.swift */; };
+		A60DA020220DC063002D1A48 /* ChargeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFA220DC063002D1A48 /* ChargeResponse.swift */; };
+		A60DA021220DC063002D1A48 /* GenericAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFB220DC063002D1A48 /* GenericAPIClient.swift */; };
+		A60DA022220DC063002D1A48 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFC220DC063002D1A48 /* Result.swift */; };
+		A60DA023220DC063002D1A48 /* CPAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFD220DC063002D1A48 /* CPAPIClient.swift */; };
+		A60DA024220DC063002D1A48 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFE220DC063002D1A48 /* HTTPMethod.swift */; };
+		A60DA025220DC063002D1A48 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D9FFF220DC063002D1A48 /* HTTPHeader.swift */; };
+		A60DA026220DC063002D1A48 /* TransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA001220DC063002D1A48 /* TransactionRequest.swift */; };
+		A60DA027220DC063002D1A48 /* ChargeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA002220DC063002D1A48 /* ChargeRequest.swift */; };
+		A60DA028220DC063002D1A48 /* OtpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA003220DC063002D1A48 /* OtpRequest.swift */; };
+		A60DA029220DC063002D1A48 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA004220DC063002D1A48 /* Endpoint.swift */; };
+		A60DA02A220DC063002D1A48 /* Cyberpaysdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA006220DC063002D1A48 /* Cyberpaysdk.swift */; };
+		A60DA02B220DC063002D1A48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA008220DC063002D1A48 /* Constants.swift */; };
+		A60DA02C220DC063002D1A48 /* CardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA009220DC063002D1A48 /* CardParser.swift */; };
+		A60DA02D220DC063002D1A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60DA00B220DC063002D1A48 /* LaunchScreen.storyboard */; };
+		A60DA02E220DC063002D1A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60DA00D220DC063002D1A48 /* Main.storyboard */; };
+		A60DA02F220DC063002D1A48 /* CPCardNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA010220DC063002D1A48 /* CPCardNumberTextField.swift */; };
+		A60DA030220DC063002D1A48 /* CPDateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA011220DC063002D1A48 /* CPDateTextField.swift */; };
+		A60DA031220DC063002D1A48 /* CPPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA012220DC063002D1A48 /* CPPaymentView.swift */; };
+		A60DA032220DC063002D1A48 /* MaterialFilledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA013220DC063002D1A48 /* MaterialFilledTextField.swift */; };
+		A60DA033220DC063002D1A48 /* CPCVVTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA014220DC063002D1A48 /* CPCVVTextField.swift */; };
+		A60DA036220DCA0B002D1A48 /* VerifyTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DA035220DCA0B002D1A48 /* VerifyTransactionResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60D9FDC220DC02B002D1A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A60D9FC8220DC02B002D1A48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60D9FD0220DC02B002D1A48;
+			remoteInfo = cyberpaysdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A60D9FD1220DC02B002D1A48 /* cyberpaysdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cyberpaysdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60D9FD4220DC02B002D1A48 /* cyberpaysdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cyberpaysdk.h; sourceTree = "<group>"; };
+		A60D9FD5220DC02B002D1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60D9FDA220DC02B002D1A48 /* cyberpaysdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cyberpaysdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60D9FDF220DC02B002D1A48 /* cyberpaysdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cyberpaysdkTests.swift; sourceTree = "<group>"; };
+		A60D9FE1220DC02B002D1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60D9FEB220DC063002D1A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60D9FED220DC063002D1A48 /* CPCardParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPCardParams.swift; sourceTree = "<group>"; };
+		A60D9FEE220DC063002D1A48 /* CPOtpParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPOtpParams.swift; sourceTree = "<group>"; };
+		A60D9FEF220DC063002D1A48 /* CPTransactionParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPTransactionParams.swift; sourceTree = "<group>"; };
+		A60D9FF1220DC063002D1A48 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		A60D9FF3220DC063002D1A48 /* Exceptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
+		A60D9FF5220DC063002D1A48 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A60D9FF7220DC063002D1A48 /* OtpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpResponse.swift; sourceTree = "<group>"; };
+		A60D9FF8220DC063002D1A48 /* TransactionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		A60D9FF9220DC063002D1A48 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		A60D9FFA220DC063002D1A48 /* ChargeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeResponse.swift; sourceTree = "<group>"; };
+		A60D9FFB220DC063002D1A48 /* GenericAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericAPIClient.swift; sourceTree = "<group>"; };
+		A60D9FFC220DC063002D1A48 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A60D9FFD220DC063002D1A48 /* CPAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPAPIClient.swift; sourceTree = "<group>"; };
+		A60D9FFE220DC063002D1A48 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		A60D9FFF220DC063002D1A48 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		A60DA001220DC063002D1A48 /* TransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRequest.swift; sourceTree = "<group>"; };
+		A60DA002220DC063002D1A48 /* ChargeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeRequest.swift; sourceTree = "<group>"; };
+		A60DA003220DC063002D1A48 /* OtpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtpRequest.swift; sourceTree = "<group>"; };
+		A60DA004220DC063002D1A48 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A60DA006220DC063002D1A48 /* Cyberpaysdk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cyberpaysdk.swift; sourceTree = "<group>"; };
+		A60DA008220DC063002D1A48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A60DA009220DC063002D1A48 /* CardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParser.swift; sourceTree = "<group>"; };
+		A60DA00C220DC063002D1A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60DA00E220DC063002D1A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		A60DA010220DC063002D1A48 /* CPCardNumberTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPCardNumberTextField.swift; sourceTree = "<group>"; };
+		A60DA011220DC063002D1A48 /* CPDateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPDateTextField.swift; sourceTree = "<group>"; };
+		A60DA012220DC063002D1A48 /* CPPaymentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPPaymentView.swift; sourceTree = "<group>"; };
+		A60DA013220DC063002D1A48 /* MaterialFilledTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialFilledTextField.swift; sourceTree = "<group>"; };
+		A60DA014220DC063002D1A48 /* CPCVVTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPCVVTextField.swift; sourceTree = "<group>"; };
+		A60DA035220DCA0B002D1A48 /* VerifyTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyTransactionResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60D9FCE220DC02B002D1A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60D9FD7220DC02B002D1A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60D9FDB220DC02B002D1A48 /* cyberpaysdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A60D9FC7220DC02B002D1A48 = {
+			isa = PBXGroup;
+			children = (
+				A60D9FD3220DC02B002D1A48 /* cyberpaysdk */,
+				A60D9FDE220DC02B002D1A48 /* cyberpaysdkTests */,
+				A60D9FD2220DC02B002D1A48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A60D9FD2220DC02B002D1A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FD1220DC02B002D1A48 /* cyberpaysdk.framework */,
+				A60D9FDA220DC02B002D1A48 /* cyberpaysdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A60D9FD3220DC02B002D1A48 /* cyberpaysdk */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FEB220DC063002D1A48 /* Assets.xcassets */,
+				A60DA00A220DC063002D1A48 /* Base.lproj */,
+				A60DA00F220DC063002D1A48 /* customviews */,
+				A60D9FF2220DC063002D1A48 /* exceptions */,
+				A60D9FF0220DC063002D1A48 /* extensions */,
+				A60D9FEC220DC063002D1A48 /* models */,
+				A60D9FF4220DC063002D1A48 /* network */,
+				A60DA005220DC063002D1A48 /* services */,
+				A60DA007220DC063002D1A48 /* utilities */,
+				A60D9FD4220DC02B002D1A48 /* cyberpaysdk.h */,
+				A60D9FD5220DC02B002D1A48 /* Info.plist */,
+			);
+			path = cyberpaysdk;
+			sourceTree = "<group>";
+		};
+		A60D9FDE220DC02B002D1A48 /* cyberpaysdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FDF220DC02B002D1A48 /* cyberpaysdkTests.swift */,
+				A60D9FE1220DC02B002D1A48 /* Info.plist */,
+			);
+			path = cyberpaysdkTests;
+			sourceTree = "<group>";
+		};
+		A60D9FEC220DC063002D1A48 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FED220DC063002D1A48 /* CPCardParams.swift */,
+				A60D9FEE220DC063002D1A48 /* CPOtpParams.swift */,
+				A60D9FEF220DC063002D1A48 /* CPTransactionParams.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A60D9FF0220DC063002D1A48 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FF1220DC063002D1A48 /* UIColor+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		A60D9FF2220DC063002D1A48 /* exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FF3220DC063002D1A48 /* Exceptions.swift */,
+			);
+			path = exceptions;
+			sourceTree = "<group>";
+		};
+		A60D9FF4220DC063002D1A48 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FF5220DC063002D1A48 /* APIError.swift */,
+				A60D9FF6220DC063002D1A48 /* response */,
+				A60D9FFB220DC063002D1A48 /* GenericAPIClient.swift */,
+				A60D9FFC220DC063002D1A48 /* Result.swift */,
+				A60D9FFD220DC063002D1A48 /* CPAPIClient.swift */,
+				A60D9FFE220DC063002D1A48 /* HTTPMethod.swift */,
+				A60D9FFF220DC063002D1A48 /* HTTPHeader.swift */,
+				A60DA000220DC063002D1A48 /* request */,
+				A60DA004220DC063002D1A48 /* Endpoint.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A60D9FF6220DC063002D1A48 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				A60D9FF7220DC063002D1A48 /* OtpResponse.swift */,
+				A60D9FF8220DC063002D1A48 /* TransactionResponse.swift */,
+				A60D9FF9220DC063002D1A48 /* ApiResponse.swift */,
+				A60D9FFA220DC063002D1A48 /* ChargeResponse.swift */,
+				A60DA035220DCA0B002D1A48 /* VerifyTransactionResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		A60DA000220DC063002D1A48 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA001220DC063002D1A48 /* TransactionRequest.swift */,
+				A60DA002220DC063002D1A48 /* ChargeRequest.swift */,
+				A60DA003220DC063002D1A48 /* OtpRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		A60DA005220DC063002D1A48 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA006220DC063002D1A48 /* Cyberpaysdk.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		A60DA007220DC063002D1A48 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA008220DC063002D1A48 /* Constants.swift */,
+				A60DA009220DC063002D1A48 /* CardParser.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		A60DA00A220DC063002D1A48 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA00B220DC063002D1A48 /* LaunchScreen.storyboard */,
+				A60DA00D220DC063002D1A48 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		A60DA00F220DC063002D1A48 /* customviews */ = {
+			isa = PBXGroup;
+			children = (
+				A60DA010220DC063002D1A48 /* CPCardNumberTextField.swift */,
+				A60DA011220DC063002D1A48 /* CPDateTextField.swift */,
+				A60DA012220DC063002D1A48 /* CPPaymentView.swift */,
+				A60DA013220DC063002D1A48 /* MaterialFilledTextField.swift */,
+				A60DA014220DC063002D1A48 /* CPCVVTextField.swift */,
+			);
+			path = customviews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A60D9FCC220DC02B002D1A48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60D9FE2220DC02B002D1A48 /* cyberpaysdk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A60D9FD0220DC02B002D1A48 /* cyberpaysdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60D9FE5220DC02B002D1A48 /* Build configuration list for PBXNativeTarget "cyberpaysdk" */;
+			buildPhases = (
+				A60D9FCC220DC02B002D1A48 /* Headers */,
+				A60D9FCD220DC02B002D1A48 /* Sources */,
+				A60D9FCE220DC02B002D1A48 /* Frameworks */,
+				A60D9FCF220DC02B002D1A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cyberpaysdk;
+			productName = cyberpaysdk;
+			productReference = A60D9FD1220DC02B002D1A48 /* cyberpaysdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A60D9FD9220DC02B002D1A48 /* cyberpaysdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60D9FE8220DC02B002D1A48 /* Build configuration list for PBXNativeTarget "cyberpaysdkTests" */;
+			buildPhases = (
+				A60D9FD6220DC02B002D1A48 /* Sources */,
+				A60D9FD7220DC02B002D1A48 /* Frameworks */,
+				A60D9FD8220DC02B002D1A48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60D9FDD220DC02B002D1A48 /* PBXTargetDependency */,
+			);
+			name = cyberpaysdkTests;
+			productName = cyberpaysdkTests;
+			productReference = A60D9FDA220DC02B002D1A48 /* cyberpaysdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60D9FC8220DC02B002D1A48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "David Ehigiator";
+				TargetAttributes = {
+					A60D9FD0220DC02B002D1A48 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A60D9FD9220DC02B002D1A48 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A60D9FCB220DC02B002D1A48 /* Build configuration list for PBXProject "cyberpaysdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A60D9FC7220DC02B002D1A48;
+			productRefGroup = A60D9FD2220DC02B002D1A48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60D9FD0220DC02B002D1A48 /* cyberpaysdk */,
+				A60D9FD9220DC02B002D1A48 /* cyberpaysdkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60D9FCF220DC02B002D1A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA02E220DC063002D1A48 /* Main.storyboard in Resources */,
+				A60DA016220DC063002D1A48 /* Assets.xcassets in Resources */,
+				A60DA02D220DC063002D1A48 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60D9FD8220DC02B002D1A48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60D9FCD220DC02B002D1A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60DA032220DC063002D1A48 /* MaterialFilledTextField.swift in Sources */,
+				A60DA020220DC063002D1A48 /* ChargeResponse.swift in Sources */,
+				A60DA021220DC063002D1A48 /* GenericAPIClient.swift in Sources */,
+				A60DA026220DC063002D1A48 /* TransactionRequest.swift in Sources */,
+				A60DA027220DC063002D1A48 /* ChargeRequest.swift in Sources */,
+				A60DA024220DC063002D1A48 /* HTTPMethod.swift in Sources */,
+				A60DA019220DC063002D1A48 /* CPTransactionParams.swift in Sources */,
+				A60DA01E220DC063002D1A48 /* TransactionResponse.swift in Sources */,
+				A60DA01B220DC063002D1A48 /* Exceptions.swift in Sources */,
+				A60DA018220DC063002D1A48 /* CPOtpParams.swift in Sources */,
+				A60DA02A220DC063002D1A48 /* Cyberpaysdk.swift in Sources */,
+				A60DA028220DC063002D1A48 /* OtpRequest.swift in Sources */,
+				A60DA02B220DC063002D1A48 /* Constants.swift in Sources */,
+				A60DA022220DC063002D1A48 /* Result.swift in Sources */,
+				A60DA017220DC063002D1A48 /* CPCardParams.swift in Sources */,
+				A60DA031220DC063002D1A48 /* CPPaymentView.swift in Sources */,
+				A60DA02C220DC063002D1A48 /* CardParser.swift in Sources */,
+				A60DA02F220DC063002D1A48 /* CPCardNumberTextField.swift in Sources */,
+				A60DA033220DC063002D1A48 /* CPCVVTextField.swift in Sources */,
+				A60DA029220DC063002D1A48 /* Endpoint.swift in Sources */,
+				A60DA023220DC063002D1A48 /* CPAPIClient.swift in Sources */,
+				A60DA030220DC063002D1A48 /* CPDateTextField.swift in Sources */,
+				A60DA01A220DC063002D1A48 /* UIColor+Extensions.swift in Sources */,
+				A60DA01F220DC063002D1A48 /* ApiResponse.swift in Sources */,
+				A60DA036220DCA0B002D1A48 /* VerifyTransactionResponse.swift in Sources */,
+				A60DA025220DC063002D1A48 /* HTTPHeader.swift in Sources */,
+				A60DA01C220DC063002D1A48 /* APIError.swift in Sources */,
+				A60DA01D220DC063002D1A48 /* OtpResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60D9FD6220DC02B002D1A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60D9FE0220DC02B002D1A48 /* cyberpaysdkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60D9FDD220DC02B002D1A48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60D9FD0220DC02B002D1A48 /* cyberpaysdk */;
+			targetProxy = A60D9FDC220DC02B002D1A48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A60DA00B220DC063002D1A48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60DA00C220DC063002D1A48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A60DA00D220DC063002D1A48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60DA00E220DC063002D1A48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A60D9FE3220DC02B002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A60D9FE4220DC02B002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A60D9FE6220DC02B002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = cyberpaysdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.cyberpaysdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60D9FE7220DC02B002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = cyberpaysdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.cyberpaysdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A60D9FE9220DC02B002D1A48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = cyberpaysdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.cyberpaysdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60D9FEA220DC02B002D1A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3Q8W8B6DC;
+				INFOPLIST_FILE = cyberpaysdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyberspace.cyberpaysdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60D9FCB220DC02B002D1A48 /* Build configuration list for PBXProject "cyberpaysdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60D9FE3220DC02B002D1A48 /* Debug */,
+				A60D9FE4220DC02B002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60D9FE5220DC02B002D1A48 /* Build configuration list for PBXNativeTarget "cyberpaysdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60D9FE6220DC02B002D1A48 /* Debug */,
+				A60D9FE7220DC02B002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60D9FE8220DC02B002D1A48 /* Build configuration list for PBXNativeTarget "cyberpaysdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60D9FE9220DC02B002D1A48 /* Debug */,
+				A60D9FEA220DC02B002D1A48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60D9FC8220DC02B002D1A48 /* Project object */;
+}
