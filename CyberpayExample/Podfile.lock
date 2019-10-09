@@ -1,22 +1,22 @@
 PODS:
-  - cyberpaysdk (1.1.1)
+  - cyberpaysdk (1.1.2)
 
 DEPENDENCIES:
-  - cyberpaysdk (from `https://github.com/cyberspace-ltd/cyberpay-ios.git`, tag `1.1.1`)
+  - cyberpaysdk (from `https://github.com/cyberspace-ltd/cyberpay-ios.git`, tag `1.1.3`)
 
 EXTERNAL SOURCES:
   cyberpaysdk:
     :git: https://github.com/cyberspace-ltd/cyberpay-ios.git
-    :tag: 1.1.1
+    :tag: 1.1.3
 
 CHECKOUT OPTIONS:
   cyberpaysdk:
     :git: https://github.com/cyberspace-ltd/cyberpay-ios.git
-    :tag: 1.1.1
+    :tag: 1.1.3
 
 SPEC CHECKSUMS:
-  cyberpaysdk: 02afee449b8535aae5b4e45f71a4814210f8ad54
+  cyberpaysdk: 0463e0b5c8ca253ef1c7f5dbec9b25add93f0b82
 
-PODFILE CHECKSUM: 180b837bcd72f43f77a086287fdbd9d32748c94f
+PODFILE CHECKSUM: c884b06cb463ed4f4283bcb804a107c9cb673798
 
 COCOAPODS: 1.8.3

@@ -17,7 +17,7 @@ class cyberpaysdkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        CyberpaySDK.shared.initializeTestEnvironment(key: "7b03633edd5b40a880bbef855159d31d")
+        CyberpaySDK.shared.initializeTestEnvironment(key: "TEST_KEY")
         
         card.number = "5399830000000008"
         

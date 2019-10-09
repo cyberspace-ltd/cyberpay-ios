@@ -146,7 +146,6 @@ class ViewController: UIViewController {
     func chargeCard()  {
         
         self.setLoadingProcess(isLoading: true)
-        
         CyberpaySDK.shared.chargeCard(param: card, transactionRef: transaction.transactionReference, onSuccess: { (transRef) in
             
             self.setLoadingProcess(isLoading: false)

@@ -32,7 +32,7 @@ public class CyberpaySDK {
     }
     
     
-    func beginTransaction(param: CPTransactionParams,onSuccess: @escaping (_ transactionReference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
+    public func beginTransaction(param: CPTransactionParams,onSuccess: @escaping (_ transactionReference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
         
@@ -59,7 +59,7 @@ public class CyberpaySDK {
         
     }
     
-    func chargeCard(param: CPCardParams, transactionRef: String, onSuccess: @escaping (_ reference: String) -> Void, onOtpRequired: @escaping (_ reference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
+    public func chargeCard(param: CPCardParams, transactionRef: String, onSuccess: @escaping (_ reference: String) -> Void, onOtpRequired: @escaping (_ reference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
         
@@ -113,7 +113,7 @@ public class CyberpaySDK {
         
     }
     
-    func verifyOtp(param: CPTransactionParams,onSuccess: @escaping (_ result: String) -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
+    public func verifyOtp(param: CPTransactionParams,onSuccess: @escaping (_ result: String) -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
         
@@ -146,7 +146,7 @@ public class CyberpaySDK {
         
     }
     
-    func verifyMerchantTransaction(param: String,onSuccess: @escaping () -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
+    public func verifyMerchantTransaction(param: String,onSuccess: @escaping () -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
         
         //throw if public key is not set
         
