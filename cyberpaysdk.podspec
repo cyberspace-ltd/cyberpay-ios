@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 spec.name        = "cyberpaysdk"
 spec.author    = "Cyberspace Network Limited"
-spec.version       = "1.1.1"
+spec.version       = "1.1.2"
 spec.summary      = "An sdk for the cyberpay payment gateway."
 spec.description  = "The cyberpay sdk aids ios developers integrating with the cyberpay SDK, and also provides some custom views for quick intergration with your app"
 spec.homepage     = "https://github.com/cyberspace-ltd/cyberpay-ios"

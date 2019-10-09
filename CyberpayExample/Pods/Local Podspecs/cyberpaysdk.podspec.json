@@ -1,7 +1,7 @@
 {
   "name": "cyberpaysdk",
   "authors": "Cyberspace Network Limited",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "summary": "An sdk for the cyberpay payment gateway.",
   "description": "The cyberpay sdk aids ios developers integrating with the cyberpay SDK, and also provides some custom views for quick intergration with your app",
   "homepage": "https://github.com/cyberspace-ltd/cyberpay-ios",
@@ -11,12 +11,13 @@
   },
   "source": {
     "git": "https://github.com/cyberspace-ltd/cyberpay-ios.git",
-    "tag": "1.0.0"
+    "tag": "1.1.1"
   },
   "source_files": [
     "cyberpaysdk",
     "cyberpaysdk/**/*.{h,m,swift}"
   ],
   "resources": "cyberpaysdk/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
+  "swift_versions": "4.2",
   "swift_version": "4.2"
 }

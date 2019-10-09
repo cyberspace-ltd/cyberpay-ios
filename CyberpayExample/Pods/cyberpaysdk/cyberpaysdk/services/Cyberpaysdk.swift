@@ -28,10 +28,11 @@ public class CyberpaySDK {
         isStagingMode = true
     }
     
+    private init() {
+    }
     
- 
     
-    public func beginTransaction(param: CPTransactionParams,onSuccess: @escaping (_ transactionReference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
+    func beginTransaction(param: CPTransactionParams,onSuccess: @escaping (_ transactionReference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
         
@@ -40,19 +41,25 @@ public class CyberpaySDK {
         CPAPIClient.shared.setTransaction(params: request) { (result) in
             switch result {
             case .success(let apiResult):
-                guard let transactionResults = apiResult?.data else { return }
                 
-                onSuccess(transactionResults.transactionReference!)
+                if apiResult?.succeeded ?? false {
+                    guard let transactionResults = apiResult?.data else { return }
+                    onSuccess(transactionResults.transactionReference!)
+                }
+                else {
+                    print("Reached endpoint but failed error \(apiResult?.message ?? "")")
+                    onError(apiResult?.message ?? "")
+                }
                 
             case .failure(let error):
                 print("the error \(error)")
-                onError(error.localizedDescription)
+                onError(error.customDescription)
             }
         }
         
     }
     
-    public func chargeCard(param: CPCardParams, transactionRef: String, onSuccess: @escaping (_ reference: String) -> Void, onOtpRequired: @escaping (_ reference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
+    func chargeCard(param: CPCardParams, transactionRef: String, onSuccess: @escaping (_ reference: String) -> Void, onOtpRequired: @escaping (_ reference: String) -> Void, onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
         
@@ -62,29 +69,39 @@ public class CyberpaySDK {
         CPAPIClient.shared.chargeCard(params: request) { (result) in
             switch result {
             case .success(let apiResult):
-                guard let transactionResults = apiResult?.data else {
-                    return onError("Transaction Failed, ensure the right card details were provided")
+                
+                if apiResult?.succeeded ?? false {
+                    guard let transactionResults = apiResult?.data else {
+                        return onError("Transaction Failed, ensure the right card details were provided")
+                        
+                    }
                     
+                    switch transactionResults.status!{
+                        
+                    case "Otp":
+                        return onOtpRequired(transactionResults.reference!)
+                        
+                    case "Failed":
+                        return onError(transactionResults.message)
+                        
+                    case "Success":
+                        return onSuccess(transactionResults.reference!)
+                        
+                    case "Successful":
+                        return onSuccess(transactionResults.reference!)
+                        
+                    default:
+                        return onError(transactionResults.message)
+                        
+                    }
+                }
+                else {
+                    print("Reached endpoint but failed error \(apiResult?.message ?? "")")
+                    onError(apiResult?.message ?? "")
                 }
                 
-                switch transactionResults.status!{
-                    
-                case "Otp":
-                    return onOtpRequired(transactionResults.reference!)
-                    
-                case "Failed":
-                    return onError(transactionResults.message)
-                    
-                case "Success":
-                    return onSuccess(transactionResults.reference!)
-                    
-                case "Successful":
-                    return onSuccess(transactionResults.reference!)
-                    
-                default:
-                    return onError(transactionResults.message)
-                    
-                }
+                
+                
                 
                 
                 
@@ -96,10 +113,9 @@ public class CyberpaySDK {
         
     }
     
-    public func verifyOtp(param: CPTransactionParams,onSuccess: @escaping (_ result: String) -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
+    func verifyOtp(param: CPTransactionParams,onSuccess: @escaping (_ result: String) -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
         
         //todo: throw if public key is not set
-        
         
         let request =  OtpRequest.init(otp: param.otp, reference: param.transactionReference)
         
@@ -107,13 +123,10 @@ public class CyberpaySDK {
             switch result {
             case .success(let apiResult):
                 guard let transactionResults = apiResult?.data else {
-                    
                     return onError("Otp verification failed")
-                    
                 }
                 
                 switch transactionResults.status!{
-                    
                 case "Successful":
                     return onSuccess(transactionResults.reference!)
                     
@@ -124,10 +137,7 @@ public class CyberpaySDK {
                     return onError(transactionResults.message)
                     
                 }
-                
-                
-                
-                
+        
             case .failure(let error):
                 print("the error \(error)")
                 onError(error.localizedDescription)
@@ -136,7 +146,7 @@ public class CyberpaySDK {
         
     }
     
-    public func verifyMerchantTransaction(param: String,onSuccess: @escaping () -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
+    func verifyMerchantTransaction(param: String,onSuccess: @escaping () -> Void,  onError: @escaping(_ errorMessage: String?) -> Void){
         
         //throw if public key is not set
         

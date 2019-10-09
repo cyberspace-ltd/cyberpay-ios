@@ -25,7 +25,7 @@ class CPAPIClient: GenericAPIClient {
     
     
     
-    func setTransaction(params: TransactionRequest, completion: @escaping (Result<ApiResponse<TransactionResponse>?, APIError>) -> ()) {
+   public func setTransaction(params: TransactionRequest, completion: @escaping (Result<ApiResponse<TransactionResponse>?, APIError>) -> ()) {
         
         let parameter = params
         
@@ -39,7 +39,7 @@ class CPAPIClient: GenericAPIClient {
     }
     
     
-    func chargeCard(params: ChargeRequest, completion: @escaping (Result<ApiResponse<ChargeResponse>?, APIError>) -> ()) {
+    public func chargeCard(params: ChargeRequest, completion: @escaping (Result<ApiResponse<ChargeResponse>?, APIError>) -> ()) {
         
         let parameter = params
         
@@ -52,7 +52,7 @@ class CPAPIClient: GenericAPIClient {
         
     }
     
-    func verifyOtp(params: OtpRequest, completion: @escaping (Result<ApiResponse<OtpResponse>?, APIError>) -> ()) {
+  public  func verifyOtp(params: OtpRequest, completion: @escaping (Result<ApiResponse<OtpResponse>?, APIError>) -> ()) {
         
         let parameter = params
         
@@ -65,7 +65,7 @@ class CPAPIClient: GenericAPIClient {
         
     }
     
-    func verifyMerchantTransaction(queryParam: String, completion: @escaping (Result<ApiResponse<VerifyTransactionResponse>?, APIError>) -> ()) {
+   public func verifyMerchantTransaction(queryParam: String, completion: @escaping (Result<ApiResponse<VerifyTransactionResponse>?, APIError>) -> ()) {
         
         
         guard let request = CPAPIEndpoint.verifyMerchantTransaction.getRequest(parameters: ["merchantRef" : queryParam ],  headers: [HTTPHeader.contentType("application/json")]) else { return }
