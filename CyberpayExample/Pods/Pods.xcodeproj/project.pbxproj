@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,10 +78,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ADEFAF3DB2DAB2F27D622C90E66773 /* Pods_CyberpayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CyberpayExample.framework; path = "Pods-CyberpayExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ADEFAF3DB2DAB2F27D622C90E66773 /* Pods_CyberpayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F487CD84036B8FAE73E192FD734DF7 /* CPCVVTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CPCVVTextField.swift; path = cyberpaysdk/customviews/CPCVVTextField.swift; sourceTree = "<group>"; };
 		0A0FEE17B0758F9455C774753F1EFFAB /* TransactionRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionRequest.swift; path = cyberpaysdk/network/request/TransactionRequest.swift; sourceTree = "<group>"; };
-		0C2EAAA7DEE6FA4182BCDFD1F214EB05 /* cyberpaysdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = cyberpaysdk.framework; path = cyberpaysdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2EAAA7DEE6FA4182BCDFD1F214EB05 /* cyberpaysdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cyberpaysdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE041412DBCC012F188D26B02EC5B99 /* cyberpaysdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cyberpaysdk.h; path = cyberpaysdk/cyberpaysdk.h; sourceTree = "<group>"; };
 		0EFEAA3171A25DEA53B485550F66930B /* Pods-CyberpayExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CyberpayExampleUITests-dummy.m"; sourceTree = "<group>"; };
 		13818F719F33074E4821FBD3DF061CD3 /* Pods-CyberpayExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CyberpayExampleUITests-umbrella.h"; sourceTree = "<group>"; };
@@ -92,9 +92,9 @@
 		24E4DDB69DCE080C0371B3D0658BE688 /* APIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = cyberpaysdk/network/APIError.swift; sourceTree = "<group>"; };
 		24E7AB01E9EE9E9338E707173D67CE30 /* Pods-CyberpayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberpayExample.release.xcconfig"; sourceTree = "<group>"; };
 		30EB6DC5577BDA9538E35E09F8DA7104 /* Pods-CyberpayExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberpayExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		33B9CB3C89AB68A296FD8DA61B7D1909 /* Pods_CyberpayExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CyberpayExampleUITests.framework; path = "Pods-CyberpayExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B9CB3C89AB68A296FD8DA61B7D1909 /* Pods_CyberpayExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36247242AE2D3C3D211946FD8EBFD67F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = cyberpaysdk/network/Result.swift; sourceTree = "<group>"; };
-		36D85FAFBD72E02F17EEFA837A874CC9 /* Pods_CyberpayExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CyberpayExampleTests.framework; path = "Pods-CyberpayExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D85FAFBD72E02F17EEFA837A874CC9 /* Pods_CyberpayExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CyberpayExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3768BA425BF747FBFFD58E92EB45578E /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = cyberpaysdk/network/HTTPMethod.swift; sourceTree = "<group>"; };
 		3E89AF8564269873760A5718418AED26 /* cyberpaysdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = cyberpaysdk.xcconfig; sourceTree = "<group>"; };
 		45E7486C69C6BAD078D9A021AFF79E6C /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = cyberpaysdk/utilities/Constants.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		95BEF04F27E79E241AA6BE282A4BD71B /* cyberpaysdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cyberpaysdk-dummy.m"; sourceTree = "<group>"; };
 		96F9E450A223FA3E2CF235117F9A92C7 /* Pods-CyberpayExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CyberpayExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B71982859A4708241E05E20C4C9161D /* Exceptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exceptions.swift; path = cyberpaysdk/exceptions/Exceptions.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6695F24F1A60EC1233A9EF7775ADC1A /* OtpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OtpResponse.swift; path = cyberpaysdk/network/response/OtpResponse.swift; sourceTree = "<group>"; };
 		A878140CA715C36D43EB543603EBC7E5 /* Pods-CyberpayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CyberpayExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A97C2FD9FE0A852C05B4FBDF2BE52772 /* CardParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardParser.swift; path = cyberpaysdk/utilities/CardParser.swift; sourceTree = "<group>"; };
@@ -289,7 +289,6 @@
 				42D744DB5FA2AE0A8E41E784BDAED51B /* Resources */,
 				86B1486EF29F4A810FE61412D27B2E5A /* Support Files */,
 			);
-			name = cyberpaysdk;
 			path = cyberpaysdk;
 			sourceTree = "<group>";
 		};
@@ -481,7 +480,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = CB47CCE2C7ACE70E7D6B663B187CBCC1 /* Products */;
@@ -654,11 +655,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -691,11 +688,7 @@
 				INFOPLIST_FILE = "Target Support Files/cyberpaysdk/cyberpaysdk-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/cyberpaysdk/cyberpaysdk.modulemap";
 				PRODUCT_MODULE_NAME = cyberpaysdk;
 				PRODUCT_NAME = cyberpaysdk;
@@ -727,11 +720,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -765,11 +754,7 @@
 				INFOPLIST_FILE = "Target Support Files/cyberpaysdk/cyberpaysdk-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/cyberpaysdk/cyberpaysdk.modulemap";
 				PRODUCT_MODULE_NAME = cyberpaysdk;
 				PRODUCT_NAME = cyberpaysdk;
@@ -802,11 +787,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExampleUITests/Pods-CyberpayExampleUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -875,8 +856,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -900,11 +880,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1002,11 +978,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExampleTests/Pods-CyberpayExampleTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1041,11 +1013,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CyberpayExample/Pods-CyberpayExample.modulemap";
 				OTHER_LDFLAGS = "";

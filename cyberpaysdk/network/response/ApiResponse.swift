@@ -13,6 +13,7 @@ import Foundation
 struct ApiResponse<T: Decodable>: Decodable {
     
     let data: T?
+    var message: String?
     var succeeded: Bool
 }
 

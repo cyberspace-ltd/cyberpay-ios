@@ -67,13 +67,19 @@ class ViewController: UIViewController {
         let amount = Double.init(amountTextField.text!)
         
         let amountInKobo = amount! * 100
-        
+        let identifier = UUID()
+
         transaction.amountInKobo = amountInKobo
-        transaction.description = "Sample transaction from iOS SDK"
+        transaction.description = "Sample transaction from iOS SDK" //Replace with your transaction description
+        transaction.merchantReference = identifier.uuidString //Replace with your merchant reference
         
-        //Add Optional Merchant Transaction reference
-        //transaction.merchantReference
         
+//        ADD OPTIONAL TRANSACTION PARAMS
+//        transaction.customerEmail
+//        transaction.customerName
+//        transaction.customerMobile
+        
+
     }
     
     func handleTextFields() {

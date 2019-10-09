@@ -101,7 +101,7 @@ extension CPAPIEndpoint: Endpoint {
 
         get {
             if (CyberpaySDK.shared.isStagingMode){
-                return "https://cyberpay-payment-api.azurewebsites.net/api/v1/"
+                return "https://payment-api.staging.cyberpay.ng/api/v1/"
             }
             else {
                 return "https://payment-api.cyberpay.ng/api/v1/"

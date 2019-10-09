@@ -194,7 +194,7 @@ extension String: PrefixContainable {
 fileprivate extension String {
     
     func prefix(_ maxLength: Int) -> String {
-        return String(characters.prefix(maxLength))
+        return String((maxLength))
     }
     
     var length: Int {
