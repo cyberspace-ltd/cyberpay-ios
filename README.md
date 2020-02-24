@@ -1,6 +1,6 @@
 # cyberpay-ios (Depreciated)
 This product is now obsolete, and we recommend you use: https://github.com/cyberspace-ltd/cyberpay-iosx
-The Cyberpay SDK makes it quick and easy to build seamless payment into your iOS app. The SDK contains custom views, and helps in managing the Cyberspace API.
+
 
 ## Features
 The SDK provides custom native UI elements to get you started easily without having to design the elements yourself.
